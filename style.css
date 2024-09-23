@@ -123,13 +123,7 @@ body{
     font-weight:1000;
     color:rgba(255);
 }
-.bamboo{
-    position: absolute;
-    top:-23%;
-    left:83%;
-    transform:translate(-50%,-50%);
-    width:15%;
-}
+
     @media only screen and (max-width: 768px) {
         .panda {
            position:absolute;
@@ -146,7 +140,7 @@ body{
         
     }
 
-.course,.quiz,.quiz1,.quiz_2,.end_,.GS,.maths1,.stats1,.ct1,.english1,.dec23,.end12024,.maths2,.stats2{
+.course,.quiz,.quiz1,.quiz_2,.end_,.GS,.maths1,.stats1,.ct1,.english1,.dec23,.end12024,.maths2,.stats2,.python_1{
   display: grid;
       grid-template-columns: repeat(3,1fr);
       grid-template-rows: repeat(3, 100px);
@@ -157,7 +151,7 @@ body{
     margin-left: 10% ;
 }
 
-.course a,.quiz a,.quiz1 a,.quiz_2 a,.end_ a,.GS a,.maths1 a,.stats1 a,.ct1 a,.english1 a,.dec23 a,.end12024 a,.maths2 a,.stats2 a {
+.course a,.quiz a,.quiz1 a,.quiz_2 a,.end_ a,.GS a,.maths1 a,.stats1 a,.ct1 a,.english1 a,.dec23 a,.end12024 a,.maths2 a,.stats2 a,.python_1 a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,27 +169,27 @@ body{
     transition: background-color 0.5s;
     margin-top: 20px;
 }
-.GS .maths_2,.GS .stat_2{
+.GS .maths_2,.GS .stat_2,.GS .python{
     background-color: #046f76;
 }
-.maths2 a,.stats2 a{
+.maths2 a,.stats2 a,.python_1 a{
     background-color: #046f76;
 }
-.course a:hover,.quiz a:hover,.quiz1 a:hover,.quiz_2 a:hover,.end_ a:hover,.GS a:hover,.maths1 a:hover,.stats1 a:hover,.ct1 a:hover,.english1 a:hover,.dec23 a:hover,.end12024 a:hover ,.maths2 a:hover,.stats2 a:hover{
+.course a:hover,.quiz a:hover,.quiz1 a:hover,.quiz_2 a:hover,.end_ a:hover,.GS a:hover,.maths1 a:hover,.stats1 a:hover,.ct1 a:hover,.english1 a:hover,.dec23 a:hover,.end12024 a:hover ,.maths2 a:hover,.stats2 a:hover,.python_1 a:hover{
     background-color: #4e4e65;
 }
-.course a:active,.quiz a:active,.quiz1 a:active,.quiz_2 a:active,.end_ a:active,.GS a:active,.maths1 a:active,.stats1 a:acive,.ct1 a:active,.english1 a:active,.dec23 a:active,.end12024 a:active,.stats2 a:active{
+.course a:active,.quiz a:active,.quiz1 a:active,.quiz_2 a:active,.end_ a:active,.GS a:active,.maths1 a:active,.stats1 a:acive,.ct1 a:active,.english1 a:active,.dec23 a:active,.end12024 a:active,.stats2 a:active,.python_1 a:active{
     background-color:#bfabab;
     color:black;
 }
 @media (max-width: 600px) {
-  .course,.quiz,.quiz1,.quiz_2,.end_,.GS,.maths1,.stats1,.ct1,.english1,.dec23,.end12024,.maths2 ,.stats2 {
+  .course,.quiz,.quiz1,.quiz_2,.end_,.GS,.maths1,.stats1,.ct1,.english1,.dec23,.end12024,.maths2 ,.stats2,.python_1 {
     margin-left: 10%;
     margin-top: 50px;
        grid-row-gap:3em;
       
   }
-.course a,.quiz a,.quiz1 a,.quiz_2 a,.end_ a, .GS a,.maths1 a,.stats1 a,.ct1 a,.english1 a,.dec23 a,.end12024 a,.maths2 a,.stats2 a
+.course a,.quiz a,.quiz1 a,.quiz_2 a,.end_ a, .GS a,.maths1 a,.stats1 a,.ct1 a,.english1 a,.dec23 a,.end12024 a,.maths2 a,.stats2 a,.python_1 a
     {  
         width: 80px;
         height:80px;
@@ -280,8 +274,8 @@ body.loaded #loading-screen {
     filter: blur(.8rem);
 }
 .mtext{
-    color:black;
-    font-size: 20px;
+    color:#04c8a7;
+    font-size: 30px;
     font-weight: 900;
 }
       
@@ -314,4 +308,54 @@ body.loaded #loading-screen {
         margin-right: 4%;
     }
     
+}
+.mtext{
+    color:#04c8a7;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.whatsapp{
+    display: flex;
+    justify-content: right;
+    position:relative;
+    margin-top: 10%;
+    margin-right: 6%;
+}
+.whatsapp p{
+    margin-top:4%;
+    margin-right: 2%;
+    font-size:1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:900;
+    color:#0cac59;
+    text-decoration: underline;
+
+}
+
+.whatsapp wicon{
+    size:100px;
+
+}
+@media (max-width: 600px) {
+    .whatsapp{
+        margin-right:2%;
+    }
+    .whatsapp p{
+        margin-top: 10%;
+    }
+    .whatsapp img{
+        scale:75%
+    }
+
+}
+.panda img{
+    scale:150%;
+    transform:translate(-20%,-30%)
+}
+@media (max-width: 600px){
+    .panda img{
+        transform:translate(-50%,-120%);
+        scale:100%
+    }
 }
