@@ -169,7 +169,7 @@ body{
     transition: background-color 0.5s;
     margin-top: 20px;
 }
-#restricted-content GS, .maths_2,.GS .stat_2,.GS .python{
+.GS .maths_2,.GS .stat_2,.GS .python{
     background-color: #046f76;
 }
 .maths2 a,.stats2 a,.python_1 a{
